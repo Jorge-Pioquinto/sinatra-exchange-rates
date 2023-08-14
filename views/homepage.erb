@@ -1,1 +1,14 @@
-<h1>Currency pairs</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Exchange Rates</title>
+</head>
+<body>
+  <h1>Currency pairs</h1>
+  <ul>
+    <% @currencies.each do |currency, name| %>
+      <li><a href="/<%= currency %>">Convert 1 <%= currency %> to...</a></li>
+    <% end %>
+  </ul>
+</body>
+</html>
